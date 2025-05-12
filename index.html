@@ -1,251 +1,453 @@
-<!doctype html>
-<html lang="es">
-  
+<html>
   <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+    />
 
-    <meta charset="UTF-8" />
+    <title>Portfolio Web</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-
-    <title>Portfolio web</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   </head>
-
+  
   <body>
-ñ
-    <header id="head"> 
-        <h1> <a href=""> Portfolio web </a> </h1>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#181C14] group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#F4EFE6] px-10 py-3">
 
-        <nav>
-          <ul>
-            <li><a href=""> About me </a></li>
-            <li><a href=""> Technologies </a></li>
-            <li><a href="">Projects </a></li>
-            <li><a href=""> Education </a></li>
-            <li><a href=""> Certifications </a></li>
-            <li><a href=""> Contact </a></li>
-          </ul>
+          <div class="flex items-center gap-4 text-[#1C160C]">
+            <h2 class="text-[#FFFFFF] text-lg font-bold leading-tight tracking-[-0.015em]">
+              Portfolio Web
+            </h2>
+          </div>
 
-          <button id="mode">Modo oscuro/claro </button>
-
-          <button id="language"> idioma </button>
-
-        </nav>
-
-    </header>
-
-
-    <main>
-      
-      <div>
-        <!-- INTRODUCCION -->
-
-        <h2> Welcome, I'm Dylan Celentano</h2>
-
-        <button> Github </button>
-        <button> linkedin </button>
-        <label for="">dyylancelentano@gmail.com</label>
-        <button>copiar</button>
-
-      </div>
-
-      <!-- SOBRE MI -->
-
-      <div>
-        <h2> About me </h2>
-
-        <p> I'm a Computer Engineering student, passionate about technology and software development. I have a solid foundation in the MERN Stack, with skills in both backend and frontend development. I'm looking for a dynamic environment where I can apply my knowledge and contribute innovative and effective solutions. I'm self-taught, always learning, collaborative, and have strong problem-solving and teamwork skills. </p>
-
-      </div>
-
-      <!-- TECNOLOGIAS -->
-      <div>
-
-        <h2> Technologies </h2>
-
-        <div class="slider">
-
-          <div class="slide-track">
-
-            <div class="content">
-              <img src="icons/technologies/python-icono.webp" alt="">
-              <p class="name-tech">Python</p>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#FFFFFF] text-sm font-medium leading-normal" href="#">Sobre mi</a>
+              <a class="text-[#FFFFFF] text-sm font-medium leading-normal" href="#">Tecnologias</a>
+              <a class="text-[#FFFFFF] text-sm font-medium leading-normal" href="#">Proyectos</a>
+              <a class="text-[#FFFFFF] text-sm font-medium leading-normal" href="#">Educacion</a>
+              <a class="text-[#FFFFFF] text-sm font-medium leading-normal" href="#">Certificaciones</a>
+              <a class="text-[#FFFFFF] text-sm font-medium leading-normal" href="#">Contacto</a>
             </div>
+            
+            <!-- Boton modo claro oscuro -->
+            <button
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#F4EFE6] text-[#FFFFFF] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+            >
+              <div class="text-[#FFFFFF]" data-icon="List" data-size="20px" data-weight="regular">
+                <img src="svg/luz.svg" alt="Modo claro/oscuro" class="w-5 h-5">
+              </div>
 
-            <div class="content">
-              <img src="icons/technologies/html-icono.webp" alt="">
-              <p class="name-tech">HTML</p>
+            <!-- boton Idioma -->
+            <button
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#F4EFE6] text-[#1C160C] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+            >
+              <div class="text-[#FFFFFF]" data-icon="List" data-size="20px" data-weight="regular">
+                <img src="svg/idioma.svg" alt="idioma" class="w-5 h-5">
+              </div>
+
+              <hr>
+
+        </header>
+
+        <main>
+          
+          <div class="w-full">
+              <!-- inicio -->
+            <div class="@container">
+                <div class="@[480px]:p-4">
+
+                  <!-- imagen inicio -->
+                  <div
+                    class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4"
+                    style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("public/img/programacion.png");'>
+
+                    <!-- Texto principal -->
+                    <div class="flex flex-col gap-2 text-center">
+
+                      <h1
+                        class="text-white text-4xl font-black leading-tight
+                        tracking-[-0.033em] @[480px]:text-5xl
+                        @[480px]:font-black @[480px]:leading-tight 
+                        @[480px]:tracking-[-0.033em]">
+                        Bienvenido, Soy Dylan Celentano
+                      </h1>
+
+                      <h2 class="text-white text-sm font-normal
+                       leading-normal @[480px]:text-base
+                        @[480px]:font-normal @[480px]:leading-normal">
+                        Desarrollador web apasionado por la tecnología y el desarrollo de software. Mi meta es unir la creatividad con la funcionalidad para crear soluciones únicas.
+                      </h2>
+
+                    </div>
+
+                  </div> <!-- imagen inicio -->
+                </div>
+            </div> <!-- contenedor inicio -->
+          </div>
+
+            <!-- ----------------------------------------------------------- -->
+
+          <div class="flex flex-1 justify-center">
+            
+            <div class="layout-content-container flex flex-col max-w-[1000px] flex-1">
+
+              <!-- SOBRE MI -->
+              <h2 class="text-[#FFFFFF] text-[30px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Sobre mí</h2>
+
+              <p class="text-[#FFFFFF] text-base font-normal leading-normal pb-3 pt-1 px-4">
+                Soy un apasionado de las tecnologías, especializado en el desarrollo y diseño de software. 
+                Tengo una sólida base en lenguajes de programación y en el desarrollo de aplicaciones web. 
+                Mi objetivo es crear soluciones innovadoras que combinen la creatividad y 
+                la funcionalidad para resolver problemas y mejorar la vida cotidiana.
+              </p>
+
+              <!-- --------------------------------------------------------- -->
+              <!-- TECNOLOGIAS -->
+              <h2 class="text-[#FFFFFF] text-[30px] font-bold
+              leading-tight tracking-[-0.015em]
+              px-4 pb-3 pt-10">Tecnologías | Base de Datos</h2>
+
+              <!-- CARRUSEL -->
+              <div class="relative w-full overflow-hidden bg-[#181C14] py-6">
+                <div id="carrusel" class="flex gap-12 animate-none whitespace-nowrap transition-transform duration-700">
+
+                  <div class="flex flex-col items-center min-w-[120px]">
+                    <img src="img/tecnologias/python.svg" alt="Python" class="h-45 mb-2" />
+                    <span class="text-[#fff] text-base">Python</span>
+                  </div>
+
+                  <div class="flex flex-col items-center min-w-[120px]">
+                    <img src="img/tecnologias/html.svg" alt="HTML" class="h-45 mb-2" />
+                    <span class="text-[#fff] text-base">HTML</span>
+                  </div>
+
+                  <div class="flex flex-col items-center min-w-[120px]">
+                    <img src="img/tecnologias/css.svg" alt="CSS" class="h-45 mb-2" />
+                    <span class="text-[#fff] text-base">CSS</span>
+                  </div>
+
+                  <div class="flex flex-col items-center min-w-[120px]">
+                    <img src="img/tecnologias/js.svg" alt="JavaScript" class="h-45 mb-2" />
+                    <span class="text-[#fff] text-base">JavaScript</span>
+                  </div>
+
+                  <div class="flex flex-col items-center min-w-[120px]">
+                    <img src="img/tecnologias/react.svg" alt="ReactJS" class="h-45 mb-2" />
+                    <span class="text-[#fff] text-base">ReactJS</span>
+                  </div>
+
+                  <div class="flex flex-col items-center min-w-[120px]">
+                    <img src="img/tecnologias/node.svg" alt="NodeJS" class="h-45 mb-2" />
+                    <span class="text-[#fff] text-base">NodeJS</span>
+                  </div>
+
+                  <div class="flex flex-col items-center min-w-[120px]">
+                    <img src="img/tecnologias/angular.svg" alt="Angular 13" class="h-45 mb-2" />
+                    <span class="text-[#fff] text-base">Angular</span>
+                  </div>
+
+                  <div class="flex flex-col items-center min-w-[120px]">
+                    <img src="img/tecnologias/java.svg" alt="Java" class="h-45 mb-2" />
+                    <span class="text-[#fff] text-base">Java</span>
+                  </div>
+
+                  <div class="flex flex-col items-center min-w-[120px]">
+                    <img src="img/tecnologias/mongo.svg" alt="MongoDB" class="h-45 mb-2" />
+                    <span class="text-[#fff] text-base">MongoDB</span>
+                  </div>
+
+                  <div class="flex flex-col items-center min-w-[120px]">
+                    <img src="img/tecnologias/mysql.svg" alt="MySQL" class="h-45 mb-2" />
+                    <span class="text-[#fff] text-base">MySQL</span>
+                  </div>
+
+                  <div class="flex flex-col items-center min-w-[120px]">
+                    <img src="img/tecnologias/sqlserver.svg" alt="SQL Server" class="h-45 mb-2" />
+                    <span class="text-[#fff] text-base">SQL Server</span>
+                  </div>
+
+                  <div class="flex flex-col items-center min-w-[120px]">
+                    <img src="img/tecnologias/postgre.svg" alt="PostgreSQL" class="h-45 mb-2" />
+                    <span class="text-[#fff] text-base">PostgreSQL</span>
+                  </div>
+
+
+                  <!-- Duplicación para que sea infinito -->
+
+                  <div class="flex flex-col items-center min-w-[120px]">
+                    <img src="img/tecnologias/python.svg" alt="Python" class="h-45 mb-2" />
+                    <span class="text-[#fff] text-base">Python</span>
+                  </div>
+
+                  <div class="flex flex-col items-center min-w-[120px]">
+                    <img src="img/tecnologias/html.svg" alt="HTML" class="h-45 mb-2" />
+                    <span class="text-[#fff] text-base">HTML</span>
+                  </div>
+
+                  <div class="flex flex-col items-center min-w-[120px]">
+                    <img src="img/tecnologias/css.svg" alt="CSS" class="h-45 mb-2" />
+                    <span class="text-[#fff] text-base">CSS</span>
+                  </div>
+
+                  <div class="flex flex-col items-center min-w-[120px]">
+                    <img src="img/tecnologias/js.svg" alt="JavaScript" class="h-45 mb-2" />
+                    <span class="text-[#fff] text-base">JavaScript</span>
+                  </div>
+
+                  <div class="flex flex-col items-center min-w-[120px]">
+                    <img src="img/tecnologias/react.svg" alt="ReactJS" class="h-45 mb-2" />
+                    <span class="text-[#fff] text-base">ReactJS</span>
+                  </div>
+
+                  <div class="flex flex-col items-center min-w-[120px]">
+                    <img src="img/tecnologias/node.svg" alt="NodeJS" class="h-45 mb-2" />
+                    <span class="text-[#fff] text-base">NodeJS</span>
+                  </div>
+
+                  <div class="flex flex-col items-center min-w-[120px]">
+                    <img src="img/tecnologias/angular.svg" alt="Angular 13" class="h-45 mb-2" />
+                    <span class="text-[#fff] text-base">Angular 13</span>
+                  </div>
+
+                <div class="flex flex-col items-center min-w-[120px]">
+                    <img src="img/tecnologias/java.svg" alt="Java" class="h-45 mb-2" />
+                    <span class="text-[#fff] text-base">Java</span>
+                  </div>
+
+                  <div class="flex flex-col items-center min-w-[120px]">
+                    <img src="img/tecnologias/mongo.svg" alt="MongoDB" class="h-45 mb-2" />
+                    <span class="text-[#fff] text-base">MongoDB</span>
+                  </div>
+
+                  <div class="flex flex-col items-center min-w-[120px]">
+                    <img src="img/tecnologias/mysql.svg" alt="MySQL" class="h-45 mb-2" />
+                    <span class="text-[#fff] text-base">MySQL</span>
+                  </div>
+
+                  <div class="flex flex-col items-center min-w-[120px]">
+                    <img src="img/tecnologias/sqlserver.svg" alt="SQL Server" class="h-45 mb-2" />
+                    <span class="text-[#fff] text-base">SQL Server</span>
+                  </div>
+
+                  <div class="flex flex-col items-center min-w-[120px]">
+                    <img src="img/tecnologias/postgre.svg" alt="PostgreSQL" class="h-45 mb-2" />
+                    <span class="text-[#fff] text-base">PostgreSQL</span>
+                  </div>
+
+              </div> <!-- CARRUSEL -->
+
+              <!-- ------------------------------------- -->
+               <!-- PROYECTOS -->
+
+              <h2 class="text-[#1C160C] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Proyectos</h2>
+              <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="max-w-[1000px] bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/bf24fea2-2875-465c-a3f5-75ce479a4ca1.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Nombre proyecto</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">Breve descripción del proyecto.</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="max-w-[1000px] bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/11753344-3fcd-44a7-8384-428bd418efea.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Nombre proyecto</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">Breve descripción del proyecto.</p>
+                  </div>
+                </div>
+              </div>
+              <h2 class="text-[#1C160C] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Educación</h2>
+              <div class="grid grid-cols-[40px_1fr] gap-x-2 px-4">
+                <div class="flex flex-col items-center gap-1 pt-3">
+                  <div class="text-[#1C160C]" data-icon="BookBookmark" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M208,24H72A32,32,0,0,0,40,56V224a8,8,0,0,0,8,8H192a8,8,0,0,0,0-16H56a16,16,0,0,1,16-16H208a8,8,0,0,0,8-8V32A8,8,0,0,0,208,24ZM120,40h48v72L148.79,97.6a8,8,0,0,0-9.6,0L120,112Zm80,144H72a31.82,31.82,0,0,0-16,4.29V56A16,16,0,0,1,72,40h32v88a8,8,0,0,0,12.8,6.4L144,114l27.21,20.4A8,8,0,0,0,176,136a8,8,0,0,0,8-8V40h16Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="w-[1.5px] bg-[#E9DFCE] h-2 grow"></div>
+                </div>
+                <div class="flex flex-1 flex-col py-3">
+                  <p class="text-[#1C160C] text-base font-medium leading-normal">Ingeniería en informática</p>
+                  <p class="text-[#A18249] text-base font-normal leading-normal">Universidad de Buenos Aires (En curso)</p>
+                </div>
+                <div class="flex flex-col items-center gap-1">
+                  <div class="w-[1.5px] bg-[#E9DFCE] h-2"></div>
+                  <div class="text-[#1C160C]" data-icon="WindowsLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M216,136H136a8,8,0,0,0-8,8v57.45a8,8,0,0,0,6.57,7.88l80,14.54A7.61,7.61,0,0,0,216,224a8,8,0,0,0,8-8V144A8,8,0,0,0,216,136Zm-8,70.41-64-11.63V152h64ZM104,136H40a8,8,0,0,0-8,8v40a8,8,0,0,0,6.57,7.87l64,11.64a8.54,8.54,0,0,0,1.43.13,8,8,0,0,0,8-8V144A8,8,0,0,0,104,136Zm-8,50.05-48-8.73V152H96ZM221.13,33.86a8,8,0,0,0-6.56-1.73l-80,14.55A8,8,0,0,0,128,54.55V112a8,8,0,0,0,8,8h80a8,8,0,0,0,8-8V40A8,8,0,0,0,221.13,33.86ZM208,104H144V61.22l64-11.63ZM109.13,54.22a8,8,0,0,0-6.56-1.73l-64,11.64A8,8,0,0,0,32,72v40a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V60.36A8,8,0,0,0,109.13,54.22ZM96,104H48V78.68L96,70Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="w-[1.5px] bg-[#E9DFCE] h-2 grow"></div>
+                </div>
+                <div class="flex flex-1 flex-col py-3">
+                  <p class="text-[#1C160C] text-base font-medium leading-normal">Desarrollo web Full Stack</p>
+                  <p class="text-[#A18249] text-base font-normal leading-normal">EdX (2020-2021)</p>
+                </div>
+                <div class="flex flex-col items-center gap-1 pb-3">
+                  <div class="w-[1.5px] bg-[#E9DFCE] h-2"></div>
+                  <div class="text-[#1C160C]" data-icon="Certificate" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M248,128a56,56,0,1,0-96,39.14V224a8,8,0,0,0,11.58,7.16L192,216.94l28.42,14.22A8,8,0,0,0,232,224V167.14A55.81,55.81,0,0,0,248,128ZM192,88a40,40,0,1,1-40,40A40,40,0,0,1,192,88Zm3.58,112.84a8,8,0,0,0-7.16,0L168,211.06V178.59a55.94,55.94,0,0,0,48,0v32.47ZM136,192a8,8,0,0,1-8,8H40a16,16,0,0,1-16-16V56A16,16,0,0,1,40,40H216a16,16,0,0,1,16,16,8,8,0,0,1-16,0H40V184h88A8,8,0,0,1,136,192Zm-16-56a8,8,0,0,1-8,8H72a8,8,0,0,1,0-16h40A8,8,0,0,1,120,136Zm0-32a8,8,0,0,1-8,8H72a8,8,0,0,1,0-16h40A8,8,0,0,1,120,104Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="flex flex-1 flex-col py-3">
+                  <p class="text-[#1C160C] text-base font-medium leading-normal">Técnico en informática profesional</p>
+                  <p class="text-[#A18249] text-base font-normal leading-normal">Instituto Técnico (2016-2018)</p>
+                </div>
+              </div>
+              <h2 class="text-[#1C160C] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Certificaciones</h2>
+              <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="max-w-[1000px] bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/67f573fc-454e-412b-925b-4c01a2d4ea5b.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Certificación xxxx</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">Lugar, modalidad, año</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="max-w-[1000px] bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/45c4ddfc-8f15-4d1e-b9b9-3f62189d6089.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Certificación xxxx</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">Lugar, modalidad, año</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="max-w-[1000px] bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/93a02a58-85b2-41e7-ae56-46c039edfb35.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Certificación xxxx</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">Lugar, modalidad, año</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="max-w-[1000px] bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/178f1790-2800-4f28-9a81-f58428a49806.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Certificación xxxx</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">Lugar, modalidad, año</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="max-w-[1000px] bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/a3dd9393-f474-4782-b271-bc05f28b73b2.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Certificación xxxx</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">Lugar, modalidad, año</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="max-w-[1000px] bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/aed63224-edb4-4c50-b4a5-90d5c609f6bc.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Certificación xxxx</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">Lugar, modalidad, año</p>
+                  </div>
+                </div>
+              </div>
+              <h2 class="text-[#1C160C] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Contáctame</h2>
+              <div class="flex max-w-[1000px] flex-wrap items-end gap-4 px-4 py-3">
+                <label class="flex flex-col min-w-40 flex-1">
+                  <p class="text-[#1C160C] text-base font-medium leading-normal pb-2">Nombre y apellido</p>
+                  <textarea
+                    placeholder="Ingrese su nombre"
+                    class="form-input flex max-w-[1000px] min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1C160C] focus:outline-0 focus:ring-0 border-none bg-[#F4EFE6] focus:border-none min-h-36 placeholder:text-[#A18249] p-4 text-base font-normal leading-normal"
+                  ></textarea>
+                </label>
+              </div>
+              <div class="flex justify-stretch">
+                <div class="flex flex-1 gap-3 flex-wrap px-4 py-3 justify-start">
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#019863] text-[#FFFFFF] text-sm font-bold leading-normal tracking-[0.015em]"
+                  >
+                    <span class="truncate">Enviar</span>
+                  </button>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#F4EFE6] text-[#1C160C] text-sm font-bold leading-normal tracking-[0.015em]"
+                  >
+                    <span class="truncate">Limpiar</span>
+                  </button>
+                </div>
+              </div>
             </div>
+          </main>
 
-            <div class="content">
-              <img src="icons/technologies/css-icono.webp" alt="">
-              <p class="name-tech">CSS</p>
-            </div>
-
-            <div class="content">
-              <img src="icons/technologies/js-icono.webp" alt="">
-              <p class="name-tech">JavaScript</p>
-            </div>
-
-            <div class="content">
-              <img src="icons/technologies/react-icono.webp" alt="">
-              <p class="name-tech">React.JS</p>
-            </div>
-
-            <div class="content">
-              <img src="icons/technologies/node-icono.webp" alt="">
-              <p class="name-tech">NodeJS</p>
-            </div>
-
-            <div class="content">
-              <img src="icons/technologies/angular-icono.webp" alt="">
-              <p class="name-tech">Angular 13</p>
-            </div>
-
-
-            <div class="content">
-              <img src="icons/technologies/python-icono.webp" alt="">
-              <p class="name-tech">Python</p>
-            </div>
-
-            <div class="content">
-              <img src="icons/technologies/html-icono.webp" alt="">
-              <p class="name-tech">HTML</p>
-            </div>
-
-            <div class="content">
-              <img src="icons/technologies/css-icono.webp" alt="">
-              <p class="name-tech">CSS</p>
-            </div>
-
-            <div class="content">
-              <img src="icons/technologies/js-icono.webp" alt="">
-              <p class="name-tech">JavaScript</p>
-            </div>
-
-            <div class="content">
-              <img src="icons/technologies/react-icono.webp" alt="">
-              <p class="name-tech">React.JS</p>
-            </div>
-
-            <div class="content">
-              <img src="icons/technologies/node-icono.webp" alt="">
-              <p class="name-tech">NodeJS</p>
-            </div>
-
-            <div class="content">
-              <img src="icons/technologies/angular-icono.webp" alt="">
-              <p class="name-tech">Angular 13</p>
-            </div>
-
+          <div class="layout-content-container flex flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#A18249] text-base font-normal leading-normal min-w-40" href="#">Política de privacidad</a>
+                <a class="text-[#A18249] text-base font-normal leading-normal min-w-40" href="#">Términos de servicio</a>
+              </div>
+              <div class="flex flex-wrap justify-center gap-4">
+                <a href="#">
+                  <div class="text-[#A18249]" data-icon="LinkedinLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="text-[#A18249]" data-icon="GitFork" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M224,64a32,32,0,1,0-40,31v9a16,16,0,0,1-16,16H88a16,16,0,0,1-16-16V95a32,32,0,1,0-16,0v9a32,32,0,0,0,32,32h32v25a32,32,0,1,0,16,0V136h32a32,32,0,0,0,32-32V95A32.06,32.06,0,0,0,224,64ZM48,64A16,16,0,1,1,64,80,16,16,0,0,1,48,64Zm96,128a16,16,0,1,1-16-16A16,16,0,0,1,144,192ZM192,80a16,16,0,1,1,16-16A16,16,0,0,1,192,80Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="text-[#A18249]" data-icon="TwitterLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <p class="text-[#A18249] text-base font-normal leading-normal">© 2023 Dylan Celentano. Todos los derechos reservados.</p>
+            </footer>
           </div>
         </div>
-
       </div>
-
-      <!-- PROYECTOS -->
-
-      <div>
-
-        <h2> Proyectos </h2>
-
-        <div class="project"> 
-
-         <img src="img/1.webp" alt="Proyecto 1">
-         <h3> Nombre proyecto </h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium fuga nam quam deleniti, iusto corporis?</p>
-
-         <img src="icons/technologies/html-blanco.webp" alt="">
-         <img src="icons/technologies/css-blanco.webp" alt="">
-         <img src="icons/technologies/js-blanco.webp" alt="">
-         <button>Ver codigo</button>
-         
-        </div>
-
-        <div class="project"> 
-          
-          <img src="img/2.webp" alt="Proyecto 2">
-          <h3> Nombre proyecto </h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium fuga nam quam deleniti, iusto corporis?</p>
- 
-          <img src="icons/technologies/html-blanco.webp" alt="">
-          <img src="icons/technologies/css-blanco.webp" alt="">
-          <img src="icons/technologies/js-blanco.webp" alt="">
-          <button>Ver codigo</button>
-          
-         </div>
-
-        
-      </div>
-
-      <!-- EEDUCACION -->
-
-      <div>
-        <h2> Education </h2>
-
-        <div class="educacion">
-          <h3> Ingenieria en informatica</h3>
-          <p> Universidad de Buenos Aires (UBA)</p>
-          <p> 2023 - en curso</p>
-        </div>
-
-        <div class="educacion">
-          <h3> Desarrollo web Full Stack </h3>
-          <p> EducaciónIT </p>
-          <p> 2025</p>
-        </div>
-
-        <div class="educacion">
-          <h3> Técnico en informática profesional </h3>
-          <p> Instituto Técnico María Reina</p>
-          <p> 2017 - 2023</p>
-        </div>
-
-      </div>
-
-      <!-- CERTIFICACIONES -->
-
-      <div>
-
-        <h2> Certifications </h2>
-        <div class="certificados">
-          <img src="img/certificados/desarrollo-web-html.png" alt="">
-          <h3> Desarrollo web HTML </h3>
-          <p> EducacionIT | Virtual</p>
-          <p> 2025 </p>
-        </div>
-
-        <div class="certificados">
-          <img src="img/certificados/desarrollo-web-html.png" alt="">
-          <h3> Desarrollo web HTML </h3>
-          <p> EducacionIT | Virtual</p>
-          <p> 2025 </p>
-        </div>
-
-        <div class="certificados">
-          <img src="img/certificados/desarrollo-web-html.png" alt="">
-          <h3> Desarrollo web HTML </h3>
-          <p> EducacionIT | Virtual</p>
-          <p> 2025 </p>
-        </div>
-
-
-
-      </div>
-
-    </main>
-
-    <footer>
-
-      <h2> Contact </h2>
-
-      <p> If you have any questions or would like me to be part of your group, feel free to contact me, either by filling out the form or through the following means </p>
-
-
-    </footer>
-
+    
+    </div> <!-- Div principal -->
+  
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

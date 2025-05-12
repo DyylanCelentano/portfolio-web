@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* Reset (Reinicia los estilos por defecto de los navegador) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid crimson; */
+  }
+  
