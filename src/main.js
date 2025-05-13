@@ -2,12 +2,12 @@ import './style.css'
 
 const carrusel = document.getElementById('carrusel')
 let pos_horizontal = 0
-const velocidad = 3 // Pixeles por frame
+const velocidad = 2 // Pixeles por frame
 
 function movimientoCarrusel() {
     pos_horizontal += velocidad
     if ( pos_horizontal >= carrusel.scrollWidth / 1.5 ){
-        pos_horizontal = 0
+        pos_horizontal = 1
     }
     carrusel.style.transform = `translateX(-${pos_horizontal}px)`
     requestAnimationFrame(movimientoCarrusel)
