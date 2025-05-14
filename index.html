@@ -9,7 +9,6 @@
     />
 
     <title>Portfolio Web</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   </head>
@@ -59,7 +58,7 @@
               </div>
 
               <div class="flex items-center justify-center w-5 h-5">
-                <img src="public/svg/flecha.svg" alt="idioma">
+                <img src="svg/flecha.svg" alt="idioma">
               </div>
 
               <hr>
@@ -78,7 +77,7 @@
                     class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center
                     bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4"
                     style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%,
-                    rgba(0, 0, 0, 0.4) 100%), url("public/img/programacion.png");'>
+                    rgba(0, 0, 0, 0.4) 100%), url("img/programacion.png");'>
 
                     <!-- Texto principal -->
                     <div class="flex flex-col gap-2 text-center">
@@ -88,16 +87,27 @@
                         tracking-[-0.033em] @[480px]:text-5xl
                         @[480px]:font-black @[480px]:leading-tight 
                         @[480px]:tracking-[-0.033em]">
-                        Bienvenido, Soy Dylan Celentano
+                        Bienvenido/a, Soy Dylan Celentano
                       </h1>
 
                       <h2 class="text-white text-sm font-normal
                        leading-normal @[480px]:text-base
                         @[480px]:font-normal @[480px]:leading-normal">
-                        Desarrollador web apasionado por la tecnología y el desarrollo de software.
+                        Desarrollador web apasionado por la tecnología y el desarrollo de software.<br>
                         Mi meta es unir la creatividad con la funcionalidad para crear soluciones únicas.
                       </h2>
 
+                    </div> <!-- Texto principal -->
+
+                    <div class="flex flex-row gap-2 mt-5">
+                      <button class="h-10 w-10 bg-[#181c14] rounded-lg"> <a href="https://www.linkedin.com/in/dylan-celentano" target="_blank"> <img src="svg/linkedin.svg" alt="Linkedin"> </a> </button>
+
+                      <button class="h-10 w-10 bg-[#181c14] rounded-lg"> <a href="https://github.com/DyylanCelentano" target="_blank"> <img src="svg/git.svg" alt="GitHub"> </a> </button>
+
+                      <div class="flex flex-row h-10 w-67 bg-[#181c14] rounded-lg items-center">
+                        <img src="svg/gmail.svg" alt="Correo" class="pl-3 h-7">
+                        <p class="text-white pl-3 text-sm font-semibold">dyylancelentano@gmail.com</p>
+                      </div>
                     </div>
 
                   </div> <!-- imagen inicio -->
@@ -126,7 +136,7 @@
               <!-- TECNOLOGIAS -->
               <h2 class="text-[#FFFFFF] text-[30px] font-bold
               leading-tight tracking-[-0.015em]
-              px-4 pb-3 pt-10">Tecnologías | Base de Datos</h2>
+              px-4 pb-3 pt-10">Tecnologías y Base de Datos</h2>
 
               <!-- CARRUSEL -->
               <div class="relative w-full overflow-hidden bg-[#181C14] py-6">
@@ -367,9 +377,26 @@
 
               <!-- --------------------------------------------------------- -->
               <!-- CERTIFICACIONES -->
-              <h2 class="text-white text-[30px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Certificaciones | Títulos</h2>
+              <h2 class="text-white text-[30px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Certificaciones y Títulos</h2>
 
-              <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4"> <!-- Caja principal certificados -->
+             <!-- Botón de ver certificado  -->
+            
+             <script>
+                class BotonCertificado extends HTMLElement {
+                  connectedCallback() {
+                    this.innerHTML = `
+                      <div class="flex items-center justify-left">
+                        <button class="bg-[#03c480] text-white font-semibold px-4 py-2 rounded-lg hover:bg-[#017a50]">
+                          Ver certificado
+                        </button>
+                      </div>
+                    `;
+                  }
+                }
+                customElements.define('boton-certificado', BotonCertificado);
+              </script>
+
+              <div class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-3 p-4"> <!-- Caja principal certificados -->
 
                 <!-- Certificado 1 -->
                 <div class="flex flex-col gap-3 pb-3">
@@ -381,6 +408,14 @@
                     <p class="text-white text-base font-medium leading-normal">Desarrollo Web HTML</p>
                     <p class="text-white text-sm font-normal leading-normal">EducaciónIT | 2025</p>
                   </div>
+
+                  
+                  <a href="https://www.educacionit.com/perfil/dylan-celentano-1058936/certificado/80151"
+                  target="_blank">
+                    <boton-certificado></boton-certificado>
+                  </a>
+                  
+                  
                 </div>
 
                 <!-- Certificado 2 -->
@@ -393,6 +428,60 @@
                     <p class="text-white text-base font-medium leading-normal">JavaScript Desde Cero</p>
                     <p class="text-white text-sm font-normal leading-normal">EducaciónIT | 2025</p>
                   </div>
+
+                  <a href="https://www.educacionit.com/perfil/dylan-celentano-1058936/certificado/80152"
+                  target="_blank">
+                    <boton-certificado></boton-certificado>
+                  </a>
+
+                </div>
+
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="max-w-[1000px] bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("img/certificados/Certificado-Maquetador-Web-Avanzado-EducaciónIT.webp");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Maquetador Web Avanzado</p>
+                    <p class="text-white text-sm font-normal leading-normal">EducaciónIT | 2025</p>
+                  </div>
+
+                  <a href="https://www.educacionit.com/perfil/dylan-celentano-1058936/certificado/80154"
+                  target="_blank">
+                    <boton-certificado></boton-certificado>
+                  </a>
+                </div>
+
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="max-w-[1000px] bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("img/certificados/Certificado-Programación-orientada-a-objetos-con-IA-EducaciónIT.webp");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Programación Orientada a Objetos con IA</p>
+                    <p class="text-white text-sm font-normal leading-normal">EducaciónIT | 2025</p>
+                  </div>
+
+                  <a href="https://www.educacionit.com/perfil/dylan-celentano-1058936/certificado/80153"
+                  target="_blank">
+                    <boton-certificado></boton-certificado>
+                  </a>
+                </div>
+
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="max-w-[1000px] bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("img/certificados/Certificado-Git_-Desarrollo-Colaborativo-EducaciónIT.webp");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Git: Desarrollo Colaborativo</p>
+                    <p class="text-white text-sm font-normal leading-normal">EducaciónIT | 2025</p>
+                  </div>
+
+                  <a href="https://www.educacionit.com/perfil/dylan-celentano-1058936/certificado/80155"
+                  target="_blank">
+                    <boton-certificado></boton-certificado>
+                  </a>
                 </div>
 
                 <div class="flex flex-col gap-3 pb-3">
@@ -404,19 +493,30 @@
                     <p class="text-white text-base font-medium leading-normal">Técnico en Informática Profesional</p>
                     <p class="text-white text-sm font-normal leading-normal">Instituto Técnico María Reina | 2017 - 2023</p>
                   </div>
+
+                  <a href="https://drive.google.com/file/d/1NZDxEvnxrIXzgHJgoSnLpay6QZr874I0/view?usp=drive_link"
+                  target="_blank">
+                    <boton-certificado></boton-certificado>
+                  </a>
                 </div>
 
                 
                 <div class="flex flex-col gap-3 pb-3">
                   <div
                     class="max-w-[1000px] bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                    style='background-image: url("public/img/certificados/certificado-visual-basic-net.webp");'
+                    style='background-image: url("img/certificados/certificado-visual-basic-net.webp");'
                   ></div>
                   <div>
                     <p class="text-white text-base font-medium leading-normal">Visual Basic .NET Avanzado</p>
                     <p class="text-white text-sm font-normal leading-normal">UTN | 2022</p>
                   </div>
+
+                  <a href="https://drive.google.com/file/d/1afljn8aUkb2upskQc5UHNaeEknVO8eaH/view?usp=drive_link"
+                  target="_blank">
+                    <boton-certificado></boton-certificado>
+                  </a>
                 </div>
+                
 
               </div> <!-- Caja principal certificados -->
 
@@ -457,7 +557,7 @@
 
                 <div class="flex items-center gap-2">
                   <img src="svg/linkedin.svg" alt="Linkedin" class="w-5 h-5 opacity-80">
-                  <a href="https://www.linkedin.com/in/dylan-celentano" target="_blank" class="no-underline hover:text-[#03c480]">www.linkedin.com/in/dylan-celentano-687281241</a>
+                  <a href="https://www.linkedin.com/in/dylan-celentano" target="_blank" class="no-underline hover:text-[#03c480]">www.linkedin.com/in/dylan-celentano</a>
                   <button class="ml-2" title="Copiar">
                     <img src="svg/copiar.svg" alt="Copiar" class="h-4 w-4 opacity-60">
                   </button>
@@ -506,6 +606,10 @@
             </div><!-- Parte derecha -->
 
           </div> <!-- Caja prinicpal que separa ambos lados -->
+
+          <div class="justify-center items-center">
+            <p class="text-white text-base"> © Todos los derechos reservados Dylan Celentano 2025</p>
+          </div>
         
         </footer> <!-- Footer -->
 
