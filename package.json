@@ -12,7 +12,10 @@
     "vite": "^6.2.0"
   },
   "dependencies": {
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/vite": "^4.1.6",
+    "tailwind-scrollbar-hide": "^2.0.0",
     "tailwindcss": "^4.1.6"
   }
 }
