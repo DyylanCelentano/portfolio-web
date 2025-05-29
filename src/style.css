@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700'); /* texto animado */
 @import "tailwindcss";
 
+/* Estilos principales */
 :root{
   --bg-principal: #181C14;
   --bg-secundario: #2B2B2B;
   --tx-color: #fff;
+  --shooting-time: 3000ms;
 }
 
 .modo-claro{ 
@@ -23,13 +26,23 @@ html {
   scroll-behavior: smooth;
 }
 
+.tech-scroll {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.tech-scroll::-webkit-scrollbar {
+    display: none;
+}
+
 #sobre-mi,
 #tecnologias,
 #proyectos,
 #educacion,
 #certificados,
 #contacto {
-  scroll-margin-top: 60px;
+
+    scroll-margin-top: 80px;
 }
 
 header, footer {
@@ -40,7 +53,15 @@ header, footer {
 body {
   background-color: var(--bg-principal);
   color: var(--tx-color);
+  overflow-x: hidden;
 }
+
+input::placeholder, textarea::placeholder {
+  color: #cccccc;
+}
+
+/* ---------------------------------- */
+/* Boton idiomas */
 
 #boton-idioma {
   color: var(--tx-color)
@@ -51,12 +72,8 @@ body {
   color: var(--tx-color);
 }
 
-input::placeholder, textarea::placeholder {
-  color: #cccccc;
-  opacity: 1; /* Opcional: asegura que no sea translúcido */
-}
 
-
+/* ---------------------------------- */
 /* Estilo para el boton de copiar */
 .Btn {
   background-color: #2B2B2B;
@@ -72,6 +89,9 @@ input::placeholder, textarea::placeholder {
   overflow: hidden;
   transition-duration: .5s;
 }
+
+/* ------------------------------- */
+/* Estilos botones animados presentacion */
 
 .texto-boton {
   color: #b8ec68;
@@ -124,3 +144,382 @@ input::placeholder, textarea::placeholder {
 .Btn:hover .svgIcon path {
   fill: #2B2B2B;
 }
+
+/* -------------------------- */
+/* Boton modo claro / oscuro */
+
+/* From Uiverse.io by JustCode14 */ 
+
+.contenedor-boton {
+  font-size: 12px;
+  position: relative;
+  display: inline-block;
+  width: 4em;
+  height: 2.2em;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hide default HTML checkbox */
+.contenedor-boton input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #080808;
+  transition: 0.4s;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.2em;
+  width: 1.2em;
+  border-radius: 20px;
+  left: 0.5em;
+  bottom: 0.5em;
+  transition: 0.4s;
+  transition-timing-function: cubic-bezier(0.81, -0.04, 0.38, 1.5);
+  box-shadow: inset 8px -4px 0px 0px #fff;
+}
+
+.contenedor-boton input:checked + .slider {
+  background-color: #00a6ff;
+}
+
+.contenedor-boton input:checked + .slider:before {
+  transform: translateX(1.8em);
+  box-shadow: inset 15px -4px 0px 15px #ffcf48;
+}
+
+.star {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  width: 5px;
+  transition: all 0.4s;
+  height: 5px;
+}
+
+.star_1 {
+  left: 2.5em;
+  top: 0.5em;
+}
+
+.star_2 {
+  left: 2.2em;
+  top: 1.2em;
+}
+
+.star_3 {
+  left: 3em;
+  top: 0.9em;
+}
+
+.contenedor-boton input:checked ~ .slider .star {
+  opacity: 0;
+}
+
+.cloud {
+  width: 3.5em;
+  position: absolute;
+  bottom: -1.4em;
+  left: -1.1em;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.contenedor-boton input:checked ~ .slider .cloud {
+  opacity: 1;
+}
+
+/* ---------------------- */
+/* Estilos fondo animado */
+
+.night {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotateZ(15deg); /* Rota el sistema de coordenadas de las estrellas */
+  overflow: hidden; /* Evita que las estrellas se salgan del contenedor de presentación */
+  z-index: 1; /* Detrás del texto (z-10) y botones (z-20) */
+}
+
+.shooting_star {
+  position: absolute;
+  height: 2px;
+  background: linear-gradient(-45deg, #124992, #0000ff00);
+  border-radius: 999px;
+  filter: drop-shadow(0 0 6px rgb(240, 240, 241));
+  animation:
+    tail var(--shooting-time) ease-in-out infinite,
+    shooting var(--shooting-time) ease-in-out infinite;
+}
+
+/* Distribuir las estrellas en posiciones aleatorias */
+.shooting_star:nth-child(1) {
+  top: 10%; left: 20%; animation-delay: 0s;
+}
+.shooting_star:nth-child(2) {
+  top: 30%; left: 50%; animation-delay: 0.5s;
+}
+.shooting_star:nth-child(3) {
+  top: 70%; left: 80%; animation-delay: 1s;
+}
+.shooting_star:nth-child(4) {
+  top: 40%; left: 10%; animation-delay: 1.5s;
+}
+.shooting_star:nth-child(5) {
+  top: 60%; left: 30%; animation-delay: 2s;
+}
+.shooting_star:nth-child(6) {
+  top: 20%; left: 70%; animation-delay: 2.5s;
+}
+.shooting_star:nth-child(7) {
+  top: 50%; left: 90%; animation-delay: 3s;
+}
+.shooting_star:nth-child(8) {
+  top: 80%; left: 40%; animation-delay: 3.5s;
+}
+.shooting_star:nth-child(9) {
+  top: 15%; left: 60%; animation-delay: 4s;
+}
+.shooting_star:nth-child(10) {
+  top: 65%; left: 15%; animation-delay: 4.5s;
+}
+.shooting_star:nth-child(11) {
+  top: 25%; left: 85%; animation-delay: 5s;
+}
+.shooting_star:nth-child(12) {
+  top: 75%; left: 25%; animation-delay: 5.5s;
+}
+.shooting_star:nth-child(13) {
+  top: 35%; left: 65%; animation-delay: 6s;
+}
+.shooting_star:nth-child(14) {
+  top: 85%; left: 5%; animation-delay: 6.5s;
+}
+.shooting_star:nth-child(15) {
+  top: 45%; left: 75%; animation-delay: 7s;
+}
+.shooting_star:nth-child(16) {
+  top: 95%; left: 35%; animation-delay: 7.5s;
+}
+.shooting_star:nth-child(17) {
+  top: 5%; left: 45%; animation-delay: 8s;
+}
+.shooting_star:nth-child(18) {
+  top: 55%; left: 95%; animation-delay: 8.5s;
+}
+.shooting_star:nth-child(19) {
+  top: 65%; left: 55%; animation-delay: 9s;
+}
+.shooting_star:nth-child(20) {
+  top: 75%; left: 65%; animation-delay: 9.5s;
+}
+
+/* Animaciones */
+@keyframes tail {
+  0% { width: 0; }
+  30% { width: 100px; }
+  100% { width: 0; }
+}
+
+@keyframes shining {
+  0% { width: 0; }
+  50% { width: 30px; }
+  100% { width: 0; }
+}
+
+@keyframes shooting {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(300px); }
+}
+
+
+/* ------------------------------- */
+/* Estilos texto animado presentacion */
+
+/* Contenedor principal del texto animado */
+.animated-title-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animated-title {
+    color: #fff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    height: 400px;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+}
+
+.animated-title > div {
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+.animated-title > div div {
+    font-size: clamp(2rem, 6vw, 4rem);
+    padding: 1rem 0;
+    position: absolute;
+    font-weight: 700;
+}
+
+.animated-title > div div span {
+    display: block;
+}
+
+/* Parte superior - Calidad y Compromiso */
+.animated-title > div.text-top {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+    top: 0;
+}
+
+.animated-title > div.text-top div {
+    animation: showTopText 2s ease-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    transform: translate(0, 100%);
+}
+
+/* Colores neutros para Calidad y Compromiso */
+.animated-title > div.text-top div span:first-child {
+    color: #d3d3d3; /* Gris neutro */
+    opacity: 0.8;
+}
+
+.animated-title > div.text-top div span:last-child {
+    color: #fff; /* Gris más oscuro */
+    opacity: 0.8;
+}
+
+/* Parte inferior - PASIÓN con efectos especiales */
+.animated-title > div.text-bottom {
+    bottom: 0;
+}
+
+.animated-title > div.text-bottom div {
+    animation: showBottomText 1.5s ease-out;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    top: 0;
+    transform: translate(0, -100%);
+}
+
+/* estilo para PASION */
+.pasion-text {
+    background: linear-gradient(45deg, #6bcf7f, #b8ec68, #4d9de0, #6bcf7f);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: 
+    gradientShift 3s ease-in-out infinite,
+    glow 2s ease-in-out infinite alternate,
+    bounce 0.6s ease-out;
+    animation-delay: 3s, 3.5s, 3s;
+    font-weight: 900;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* responsive mobile */
+@media (max-width: 640px) {
+  .animated-title-container {
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .animated-title {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    position: static;
+  }
+
+  .animated-title > div {
+    position: static;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .animated-title > div div {
+    font-size: 2rem;
+    line-height: 1.5;
+    position: static;
+    padding: 0.5rem 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .animated-title > div.text-top div span,
+  .animated-title > div.text-top div span:first-child {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Animaciones */
+@keyframes showTopText {
+    0% { transform: translate3d(0, 100%, 0); opacity: 0; }
+    50% { transform: translate3d(0, 50%, 0); opacity: 0.5; }
+    100% { transform: translate3d(0, 0, 0); opacity: 1; }
+}
+
+@keyframes showBottomText {
+    0% { transform: translate3d(0, -100%, 0); opacity: 0; }
+    100% { transform: translate3d(0, 0, 0); opacity: 1; }
+}
+
+/* --------------------------- */
+/* Estilos carrusel */
+#carrusel {
+  overflow-x: scroll; /* Permite el desplazamiento horizontal */
+  cursor: grab; /* Cambia el cursor para indicar que se puede arrastrar */
+  scrollbar-width: none; /* Oculta el scroll en Firefox */
+  -ms-overflow-style: none; /* Oculta el scroll en IE y Edge */
+  display: flex;
+  gap: 1.5rem; /* Espaciado entre elementos */
+  overflow-x: auto; /* Habilitar desplazamiento horizontal */
+  scroll-snap-type: x mandatory; /* Desplazamiento suave */
+}
+
+#carrusel::-webkit-scrollbar {
+  display: none; /* Oculta el scroll en Chrome, Safari y Opera */
+}
+
