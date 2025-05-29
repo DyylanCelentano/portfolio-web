@@ -173,7 +173,7 @@ const traducciones = {
     // CERTIFICADOS
     "certificados.titulo": "Certificaciones y Títulos",
     "certificados.btn.ver": "Ver Certificado",
-    "certificados.1.titulo": "Desarrollador Web Full Stack",
+    "certificados.1.titulo": "Desarrollo Web HTML",
     "certificados.2.titulo": "JavaScript desde Cero",
     "certificados.3.titulo": "Maquetador Web Avanzado",
     "certificados.4.titulo": "Programación Orientada a Objetos con IA",
@@ -250,17 +250,16 @@ const traducciones = {
     "educacion.2.fecha": "2025 - ongoing",
     "educacion.3.titulo": "Professional IT Technician",
 
-    // CERTIFICADOS
+    // CERTIFICATES
     "certificados.titulo": "Certifications and Titles",
     "certificados.btn.ver": "View Certificate",
-    "certificados.1.titulo": "Full Stack Web Developer",
-    "certificados.2.titulo": "JavaScript for beginners",
-    "certificados.3.titulo": "Advanced web developer",
+    "certificados.1.titulo": "Web Development HTML",
+    "certificados.2.titulo": "JavaScript for Beginners",
+    "certificados.3.titulo": "Advanced Web Developer",
     "certificados.4.titulo": "Object-Oriented Programming with AI",
     "certificados.5.titulo": "Git: Collaborative Development",
     "certificados.6.titulo": "Professional IT Technician",
     "certificados.7.titulo": "Visual Basic .NET Advanced",
-
 
     // FORMULARIO
     "contacto.titulo": "Contact me",
