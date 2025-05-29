@@ -42,7 +42,7 @@ html {
 #certificados,
 #contacto {
 
-    scroll-margin-top: 80px;
+    scroll-margin-top: 30px;
 }
 
 header, footer {
@@ -251,8 +251,8 @@ input::placeholder, textarea::placeholder {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   transform: rotateZ(15deg); /* Rota el sistema de coordenadas de las estrellas */
   overflow: hidden; /* Evita que las estrellas se salgan del contenedor de presentación */
   z-index: 1; /* Detrás del texto (z-10) y botones (z-20) */
