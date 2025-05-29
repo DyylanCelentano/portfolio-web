@@ -355,6 +355,10 @@ configurarBotonIdiomas();
 
 /* ------------------------- */
 /* Funcionamiento para formulario */
+import emailjs from 'emailjs-com';
+emailjs.init(import.meta.env.VITE_PUBLIC_ID);
+
+
 const form = document.getElementById("contact-form");
 
 form.addEventListener("submit", function (event) {
@@ -380,7 +384,7 @@ form.addEventListener("submit", function (event) {
     }
 
     // Si todo está bien se envía el formulario
-    emailjs.sendForm("service_zkdpavk", "template_fzjl80s", form)
+    emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form)
         .then(function () {
             alert("Correo enviado exitosamente");
             form.reset(); // Limpia el formulario
