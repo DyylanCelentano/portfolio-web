@@ -523,3 +523,54 @@ input::placeholder, textarea::placeholder {
   display: none; /* Oculta el scroll en Chrome, Safari y Opera */
 }
 
+
+/* Estilos para el carrusel desktop automatico */
+.tech-carousel {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100%;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.tech-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* Animación CSS para carrusel infinito */
+@keyframes scroll-infinite {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.carousel-track {
+    display: flex;
+    gap: 2rem;
+    animation: scroll-infinite 20s linear infinite;
+    width: fit-content;
+}
+
+/* Pausar animación al hover */
+.tech-carousel:hover .carousel-track {
+    animation-play-state: paused;
+}
+
+/* Responsive: desactivar animación en móvil */
+@media (max-width: 640px) {
+    .carousel-track {
+        animation: none;
+        gap: 1rem;
+    }
+    
+    .tech-carousel {
+        overflow-x: scroll;
+    }
+}
+
+
