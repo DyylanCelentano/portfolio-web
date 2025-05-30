@@ -273,145 +273,226 @@
 
                 <div class="max-w-6xl">
                     <p data-i18n="sobre-mi.descripcion" class="text-sm sm:text-base lg:text-lg font-normal leading-relaxed">
-                        Soy estudiante de Ingeniería en Informática con un gran interés en el desarrollo Full Stack. Disfruto tanto del trabajo en frontend como en backend. Busco aplicar mis conocimientos y habilidades para construir soluciones efectivas, bien estructuradas y mantenibles. Valoro mucho el trabajo colaborativo, el código limpio y la mejora constante. Me entusiasma participar en proyectos donde pueda contribuir con ideas y seguir creciendo como desarrollador.
+                        Soy estudiante de Ingeniería en Informática con interés en el desarrollo web Full Stack. Me gusta involucrarme tanto en el frontend como en el backend, y disfruto construir soluciones ordenadas, funcionales y sostenibles. Vengo trabajando en distintos proyectos que me permitieron poner en práctica lo aprendido, seguir mejorando y reforzar mi interés por crecer en este camino. Valoro el trabajo en equipo, la escritura de código limpio y aprender de cada experiencia. Mi objetivo es seguir sumando herramientas y aportar valor en los desafíos que vengan.
                     </p>
                 </div>
               </section>
 
               <!-- --------------------------------------------------------- -->
               <!-- TECNOLOGIAS -->
-              <section id="tecnologias" class="py-8 sm:py-12 lg:py-3">
-
-                <h2 data-i18n="tecnologias.titulo" class="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight tracking-[-0.015em] mb-6 sm:mb-8">
+              <section id="tecnologias" class="py-8 sm:py-12 lg:py-16">
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight tracking-[-0.015em] mb-6 sm:mb-8">
                     Tecnologías y Base de Datos
                 </h2>
 
-                <!-- Grid para tablets y escritorio -->
+                <!-- Carrusel para desktop/tablet con animación automática -->
                 <div class="hidden sm:block">
-                    <div class="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4 sm:gap-6 lg:gap-8">
-                        <div class="flex flex-col items-center">
-                            <img src="img/tecnologias/python.svg" alt="Python" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
-                            <span class="text-xs sm:text-sm text-center">Python</span>
-                        </div>
-                        <div class="flex flex-col items-center">
-                            <img src="img/tecnologias/html.svg" alt="HTML" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
-                            <span class="text-xs sm:text-sm text-center">HTML</span>
-                        </div>
-                        <div class="flex flex-col items-center">
-                            <img src="img/tecnologias/css.svg" alt="CSS" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
-                            <span class="text-xs sm:text-sm text-center">CSS</span>
-                        </div>
-                        <div class="flex flex-col items-center">
-                            <img src="img/tecnologias/js.svg" alt="JavaScript" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
-                            <span class="text-xs sm:text-sm text-center">JavaScript</span>
-                        </div>
-                        <div class="flex flex-col items-center">
-                            <img src="img/tecnologias/react.svg" alt="ReactJS" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
-                            <span class="text-xs sm:text-sm text-center">ReactJS</span>
-                        </div>
-                        <div class="flex flex-col items-center">
-                            <img src="img/tecnologias/node.svg" alt="NodeJS" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
-                            <span class="text-xs sm:text-sm text-center">NodeJS</span>
-                        </div>
-                        <div class="flex flex-col items-center">
-                            <img src="img/tecnologias/angular.svg" alt="Angular" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
-                            <span class="text-xs sm:text-sm text-center">Angular</span>
-                        </div>
-                        <div class="flex flex-col items-center">
-                            <img src="img/tecnologias/java.svg" alt="Java" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
-                            <span class="text-xs sm:text-sm text-center">Java</span>
-                        </div>
-                        <div class="flex flex-col items-center">
-                            <img src="img/tecnologias/tailwind.svg" alt="Tailwind" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
-                            <span class="text-xs sm:text-sm text-center">Tailwind</span>
-                        </div>
-                        <div class="flex flex-col items-center">
-                            <img src="img/tecnologias/mongo.svg" alt="MongoDB" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
-                            <span class="text-xs sm:text-sm text-center">MongoDB</span>
-                        </div>
-                        <div class="flex flex-col items-center">
-                            <img src="img/tecnologias/mysql.svg" alt="MySQL" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
-                            <span class="text-xs sm:text-sm text-center">MySQL</span>
-                        </div>
-                        <div class="flex flex-col items-center">
-                            <img src="img/tecnologias/sqlserver.svg" alt="SQL Server" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
-                            <span class="text-xs sm:text-sm text-center">SQL Server</span>
-                        </div>
-                        <div class="flex flex-col items-center">
-                            <img src="img/tecnologias/postgre.svg" alt="PostgreSQL" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
-                            <span class="text-xs sm:text-sm text-center">PostgreSQL</span>
-                        </div>
-                    </div>
-                </div>
+                    <div id="carrusel-desktop" class="tech-carousel relative"> <!-- carrusel-desktop -->
 
-                <!-- Carrusel para mobile -->
+                        <div class="carousel-track"> <!-- carrousel-track -->
+                            <!-- Primer set de tecnologías -->
+                            <div class="flex flex-col items-center min-w-[120px] flex-shrink-0">
+                                <img src="img/tecnologias/python.svg" alt="Python" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+                                <span class="text-sm text-center">Python</span>
+                            </div>
+                            
+                            <div class="flex flex-col items-center min-w-[120px] flex-shrink-0">
+                                <img src="img/tecnologias/html.svg" alt="HTML" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+                                <span class="text-sm text-center">HTML</span>
+                            </div>
+                            
+                            <div class="flex flex-col items-center min-w-[120px] flex-shrink-0">
+                                <img src="img/tecnologias/css.svg" alt="CSS" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+                                <span class="text-sm text-center">CSS</span>
+                            </div>
+                            
+                            <div class="flex flex-col items-center min-w-[120px] flex-shrink-0">
+                                <img src="img/tecnologias/js.svg" alt="JavaScript" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+                                <span class="text-sm text-center">JavaScript</span>
+                            </div>
+                            
+                            <div class="flex flex-col items-center min-w-[120px] flex-shrink-0">
+                                <img src="img/tecnologias/react.svg" alt="ReactJS" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+                                <span class="text-sm text-center">ReactJS</span>
+                            </div>
+                            
+                            <div class="flex flex-col items-center min-w-[120px] flex-shrink-0">
+                                <img src="img/tecnologias/node.svg" alt="NodeJS" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+                                <span class="text-sm text-center">NodeJS</span>
+                            </div>
+                            
+                            <div class="flex flex-col items-center min-w-[120px] flex-shrink-0">
+                                <img src="img/tecnologias/angular.svg" alt="Angular" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+                                <span class="text-sm text-center">Angular</span>
+                            </div>
+                            
+                            <div class="flex flex-col items-center min-w-[120px] flex-shrink-0">
+                                <img src="img/tecnologias/java.svg" alt="Java" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+                                <span class="text-sm text-center">Java</span>
+                            </div>
+                            
+                            <div class="flex flex-col items-center min-w-[120px] flex-shrink-0">
+                                <img src="img/tecnologias/tailwind.svg" alt="Tailwind" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+                                <span class="text-sm text-center">Tailwind</span>
+                            </div>
+                            
+                            <div class="flex flex-col items-center min-w-[120px] flex-shrink-0">
+                                <img src="img/tecnologias/mongo.svg" alt="MongoDB" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+                                <span class="text-sm text-center">MongoDB</span>
+                            </div>
+                            
+                            <div class="flex flex-col items-center min-w-[120px] flex-shrink-0">
+                                <img src="img/tecnologias/mysql.svg" alt="MySQL" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+                                <span class="text-sm text-center">MySQL</span>
+                            </div>
+                            
+                            <div class="flex flex-col items-center min-w-[120px] flex-shrink-0">
+                                <img src="img/tecnologias/sqlserver.svg" alt="SQL Server" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+                                <span class="text-sm text-center">SQL Server</span>
+                            </div>
+                            
+                            <div class="flex flex-col items-center min-w-[120px] flex-shrink-0">
+                                <img src="img/tecnologias/postgre.svg" alt="PostgreSQL" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+                                <span class="text-sm text-center">PostgreSQL</span>
+                            </div>
+
+                            <!-- Duplicado para efecto infinito -->
+                            <div class="flex flex-col items-center min-w-[120px] flex-shrink-0">
+                                <img src="img/tecnologias/python.svg" alt="Python" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+                                <span class="text-sm text-center">Python</span>
+                            </div>
+                            
+                            <div class="flex flex-col items-center min-w-[120px] flex-shrink-0">
+                                <img src="img/tecnologias/html.svg" alt="HTML" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+                                <span class="text-sm text-center">HTML</span>
+                            </div>
+                            
+                            <div class="flex flex-col items-center min-w-[120px] flex-shrink-0">
+                                <img src="img/tecnologias/css.svg" alt="CSS" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+                                <span class="text-sm text-center">CSS</span>
+                            </div>
+                            
+                            <div class="flex flex-col items-center min-w-[120px] flex-shrink-0">
+                                <img src="img/tecnologias/js.svg" alt="JavaScript" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+                                <span class="text-sm text-center">JavaScript</span>
+                            </div>
+                            
+                            <div class="flex flex-col items-center min-w-[120px] flex-shrink-0">
+                                <img src="img/tecnologias/react.svg" alt="ReactJS" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+                                <span class="text-sm text-center">ReactJS</span>
+                            </div>
+                            
+                            <div class="flex flex-col items-center min-w-[120px] flex-shrink-0">
+                                <img src="img/tecnologias/node.svg" alt="NodeJS" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+                                <span class="text-sm text-center">NodeJS</span>
+                            </div>
+                            
+                            <div class="flex flex-col items-center min-w-[120px] flex-shrink-0">
+                                <img src="img/tecnologias/angular.svg" alt="Angular" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+                                <span class="text-sm text-center">Angular</span>
+                            </div>
+                            
+                            <div class="flex flex-col items-center min-w-[120px] flex-shrink-0">
+                                <img src="img/tecnologias/java.svg" alt="Java" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+                                <span class="text-sm text-center">Java</span>
+                            </div>
+                            
+                            <div class="flex flex-col items-center min-w-[120px] flex-shrink-0">
+                                <img src="img/tecnologias/tailwind.svg" alt="Tailwind" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+                                <span class="text-sm text-center">Tailwind</span>
+                            </div>
+                            
+                            <div class="flex flex-col items-center min-w-[120px] flex-shrink-0">
+                                <img src="img/tecnologias/mongo.svg" alt="MongoDB" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+                                <span class="text-sm text-center">MongoDB</span>
+                            </div>
+                            
+                            <div class="flex flex-col items-center min-w-[120px] flex-shrink-0">
+                                <img src="img/tecnologias/mysql.svg" alt="MySQL" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+                                <span class="text-sm text-center">MySQL</span>
+                            </div>
+                            
+                            <div class="flex flex-col items-center min-w-[120px] flex-shrink-0">
+                                <img src="img/tecnologias/sqlserver.svg" alt="SQL Server" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+                                <span class="text-sm text-center">SQL Server</span>
+                            </div>
+                            
+                            <div class="flex flex-col items-center min-w-[120px] flex-shrink-0">
+                                <img src="img/tecnologias/postgre.svg" alt="PostgreSQL" class="w-12 h-12 sm:w-16 sm:h-16 mb-2" />
+                                <span class="text-sm text-center">PostgreSQL</span>
+                            </div>
+
+                        </div> <!-- carrousel-track -->
+
+                    </div> <!-- carrusel-desktop -->
+
+                </div> <!-- Carrusel para desktop -->
+
+                <!-- Carrusel para mobile (scroll manual) -->
                 <div class="block sm:hidden">
                     <div class="relative">
-                        <div id="carrusel-mobile" class="tech-scroll flex gap-4 overflow-x-auto pb-4">
+                        <div id="carrusel-mobile" class="flex gap-4 overflow-x-auto pb-4">
                             <div class="flex flex-col items-center min-w-[80px] flex-shrink-0">
-                                <img src="img/tecnologias/python.svg" alt="Python" class="w-12 h-12 mb-2" />
+                                <div class="w-12 h-12 bg-blue-600 rounded-lg mb-2 flex items-center justify-center text-white font-bold text-xs">PY</div>
                                 <span class="text-xs text-center">Python</span>
                             </div>
                             <div class="flex flex-col items-center min-w-[80px] flex-shrink-0">
-                                <img src="img/tecnologias/html.svg" alt="HTML" class="w-12 h-12 mb-2" />
+                                <div class="w-12 h-12 bg-orange-600 rounded-lg mb-2 flex items-center justify-center text-white font-bold text-xs">HTML</div>
                                 <span class="text-xs text-center">HTML</span>
                             </div>
                             <div class="flex flex-col items-center min-w-[80px] flex-shrink-0">
-                                <img src="img/tecnologias/css.svg" alt="CSS" class="w-12 h-12 mb-2" />
+                                <div class="w-12 h-12 bg-blue-500 rounded-lg mb-2 flex items-center justify-center text-white font-bold text-xs">CSS</div>
                                 <span class="text-xs text-center">CSS</span>
                             </div>
                             <div class="flex flex-col items-center min-w-[80px] flex-shrink-0">
-                                <img src="img/tecnologias/js.svg" alt="JavaScript" class="w-12 h-12 mb-2" />
+                                <div class="w-12 h-12 bg-yellow-500 rounded-lg mb-2 flex items-center justify-center text-black font-bold text-xs">JS</div>
                                 <span class="text-xs text-center">JavaScript</span>
                             </div>
                             <div class="flex flex-col items-center min-w-[80px] flex-shrink-0">
-                                <img src="img/tecnologias/react.svg" alt="ReactJS" class="w-12 h-12 mb-2" />
+                                <div class="w-12 h-12 bg-cyan-500 rounded-lg mb-2 flex items-center justify-center text-white font-bold text-xs">REACT</div>
                                 <span class="text-xs text-center">ReactJS</span>
                             </div>
                             <div class="flex flex-col items-center min-w-[80px] flex-shrink-0">
-                                <img src="img/tecnologias/node.svg" alt="NodeJS" class="w-12 h-12 mb-2" />
+                                <div class="w-12 h-12 bg-green-600 rounded-lg mb-2 flex items-center justify-center text-white font-bold text-xs">NODE</div>
                                 <span class="text-xs text-center">NodeJS</span>
                             </div>
                             <div class="flex flex-col items-center min-w-[80px] flex-shrink-0">
-                                <img src="img/tecnologias/angular.svg" alt="Angular" class="w-12 h-12 mb-2" />
+                                <div class="w-12 h-12 bg-red-600 rounded-lg mb-2 flex items-center justify-center text-white font-bold text-xs">ANG</div>
                                 <span class="text-xs text-center">Angular</span>
                             </div>
                             <div class="flex flex-col items-center min-w-[80px] flex-shrink-0">
-                                <img src="img/tecnologias/java.svg" alt="Java" class="w-12 h-12 mb-2" />
+                                <div class="w-12 h-12 bg-orange-700 rounded-lg mb-2 flex items-center justify-center text-white font-bold text-xs">JAVA</div>
                                 <span class="text-xs text-center">Java</span>
                             </div>
                             <div class="flex flex-col items-center min-w-[80px] flex-shrink-0">
-                                <img src="img/tecnologias/tailwind.svg" alt="Tailwind" class="w-12 h-12 mb-2" />
+                                <div class="w-12 h-12 bg-teal-500 rounded-lg mb-2 flex items-center justify-center text-white font-bold text-xs">TW</div>
                                 <span class="text-xs text-center">Tailwind</span>
                             </div>
                             <div class="flex flex-col items-center min-w-[80px] flex-shrink-0">
-                                <img src="img/tecnologias/mongo.svg" alt="MongoDB" class="w-12 h-12 mb-2" />
+                                <div class="w-12 h-12 bg-green-700 rounded-lg mb-2 flex items-center justify-center text-white font-bold text-xs">MONGO</div>
                                 <span class="text-xs text-center">MongoDB</span>
                             </div>
                             <div class="flex flex-col items-center min-w-[80px] flex-shrink-0">
-                                <img src="img/tecnologias/mysql.svg" alt="MySQL" class="w-12 h-12 mb-2" />
+                                <div class="w-12 h-12 bg-blue-700 rounded-lg mb-2 flex items-center justify-center text-white font-bold text-xs">SQL</div>
                                 <span class="text-xs text-center">MySQL</span>
                             </div>
                             <div class="flex flex-col items-center min-w-[80px] flex-shrink-0">
-                                <img src="img/tecnologias/sqlserver.svg" alt="SQL Server" class="w-12 h-12 mb-2" />
+                                <div class="w-12 h-12 bg-red-700 rounded-lg mb-2 flex items-center justify-center text-white font-bold text-xs">SQLSV</div>
                                 <span class="text-xs text-center">SQL Server</span>
                             </div>
                             <div class="flex flex-col items-center min-w-[80px] flex-shrink-0">
-                                <img src="img/tecnologias/postgre.svg" alt="PostgreSQL" class="w-12 h-12 mb-2" />
+                                <div class="w-12 h-12 bg-blue-800 rounded-lg mb-2 flex items-center justify-center text-white font-bold text-xs">PG</div>
                                 <span class="text-xs text-center">PostgreSQL</span>
                             </div>
                         </div>
-
+                        
                         <!-- Indicador de scroll -->
                         <div class="text-center text-xs text-gray-500 mt-2">
                             ← Desliza para ver más →
                         </div>
-
-                    </div> <!-- clase mobile relative -->
-
-                </div> <!-- carrusel mobile -->
-
-            </section> <!-- Tecnologias -->
+                    </div>
+                </div>
+            </section>
 
               <!-- ------------------------------------- -->
                <!-- PROYECTOS -->
@@ -459,7 +540,7 @@
                             </div>
 
                             <p data-i18n="proyectos.dietetic.descripcion" class="text-xs sm:text-sm line-clamp-3">
-                                Proyecto integrador académico basado en un e-commerce destinado a los comercios físicos para expandir su alcance y vender digitalmente, sin necesidad de contar con conocimientos técnicos avanzados.
+                                Proyecto integrador académico colaborativo basado en un e-commerce destinado a los comercios físicos para expandir su alcance y vender digitalmente, sin necesidad de contar con conocimientos técnicos avanzados.
                             </p>
                             
                             <div class="flex flex-row sm:flex-row gap-2 mt-auto">
@@ -489,7 +570,7 @@
                             </div>
 
                             <p data-i18n="proyectos.pokeapi.descripcion" class="text-xs sm:text-sm line-clamp-3">
-                                API REST para consultar y gestionar datos de Pokémon, incluyendo habilidades, movimientos y armado de equipos. Diseño modular y consumo de datos desde archivos CSV y guardado de la información en una base de datos SQLite.
+                                Proyecto Full Stack en equipo. Desarrollo de una API REST para consultar datos de Pokémon a partir de archivos CSV, luego migrados a SQLite. Actualmente incorporando frontend en Svelte.
                             </p>
 
                             <div class="mt-auto">
@@ -796,7 +877,7 @@
                         <h2 data-i18n="contacto.titulo" class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">Contáctame</h2>
                         
                         <p data-i18n="contacto.descripcion" class="text-lg sm:text-xl font-semibold mb-6">
-                            Si tenés alguna duda, querés saber más de mí o te interesaría que forme parte de tu equipo de trabajo no dudes en contactarme.
+                            ¿Tenés alguna duda? ¿Querés saber más de mí? ¿Te interesaría que forme parte de tu equipo de trabajo? ¡No dudes en escribirme!
                         </p>
 
                         <!-- INFO  -->
