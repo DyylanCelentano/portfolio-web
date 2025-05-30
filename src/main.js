@@ -69,7 +69,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-// Funcionalidad del carrusel
+// Funcionalidad del carrusel mobile
 const carrusel = document.getElementById('carrusel');
 let isDown = false;
 let startX;
