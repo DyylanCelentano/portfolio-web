@@ -138,7 +138,7 @@ const traducciones = {
 
     // SOBRE MI
     "sobre-mi.titulo": "Sobre mí",
-    "sobre-mi.descripcion": "Soy estudiante de Ingeniería en Informática con un gran interés en el desarrollo Full Stack. Disfruto tanto del trabajo en frontend como en backend. Busco aplicar mis conocimientos y habilidades para construir soluciones efectivas, bien estructuradas y mantenibles. Valoro mucho el trabajo colaborativo, el código limpio y la mejora constante. Me entusiasma participar en proyectos donde pueda contribuir con ideas y seguir creciendo como desarrollador.",
+    "sobre-mi.descripcion": "Soy estudiante de Ingeniería en Informática con interés en el desarrollo web Full Stack. Me gusta involucrarme tanto en el frontend como en el backend, y disfruto construir soluciones ordenadas, funcionales y sostenibles. Vengo trabajando en distintos proyectos que me permitieron poner en práctica lo aprendido, seguir mejorando y reforzar mi interés por crecer en este camino. \n Valoro el trabajo en equipo, la escritura de código limpio y aprender de cada experiencia. Mi objetivo es seguir sumando herramientas y aportar valor en los desafíos que vengan.",
 
     // TECNOLOGIAS
     "tecnologias.titulo": "Tecnologías y Base de Datos",
@@ -150,15 +150,15 @@ const traducciones = {
     "proyectos.titulo": "Proyectos",
     "proyectos.dietetic.titulo": "Dietetic-Shop",
     "proyectos.dietetic.subtitulo": "Fundación Banco Nacion | Fundación Pescar",
-    "proyectos.dietetic.descripcion": "Proyecto integrador académico basado en un e-commerce destinado a los comercios físicos para expandir su alcance y vender digitalmente, sin necesidad de contar con conocimientos técnicos avanzados.",
+    "proyectos.dietetic.descripcion": "Proyecto integrador académico colaborativo basado en un e-commerce destinado a los comercios físicos para expandir su alcance y vender digitalmente.",
     "proyectos.pokeapi.titulo": "PokeAPI",
     "proyectos.pokeapi.subtitulo": "Universidad de Buenos Aires",
-    "proyectos.pokeapi.descripcion": "API REST para consultar y gestionar datos de Pokémon, incluyendo habilidades, movimientos y armado de equipos. Diseño modular y consumo de datos desde archivos CSV y guardado de la información en una base de datos SQLite.",
+    "proyectos.pokeapi.descripcion": "Proyecto Full Stack en equipo. Desarrollo de una API REST para consultar datos de Pokémon a partir de archivos CSV, luego migrados a SQLite. Actualmente incorporando frontend en Svelte.",
     "proyectos.portfolio.titulo": "Portfolio Web",
     "proyectos.portfolio.descripcion": "Portafolio interactivo, mostrando mis habilidades y proyectos en un diseño responsivo.",
     "proyectos.laburatorio.titulo": "Simulador de Entrevista Express",
     "proyectos.laburatorio.subtitulo": "Fundación Pescar",
-    "proyectos.laburatorio.descripcion": "Proyecto interactivo de simulador de entrevistas laborales desarrollado para un evento de tecnología llamado Laburatorio.",
+    "proyectos.laburatorio.descripcion": "Proyecto realizado en equipo de simulador de entrevistas laborales desarrollado para un evento de tecnología llamado Laburatorio.",
 
     // EDUCACION
     "educacion.titulo": "Educación",
@@ -183,7 +183,7 @@ const traducciones = {
 
     // FORMULARIO
     "contacto.titulo": "Contactame",
-    "contacto.descripcion": "Si tenés alguna duda, querés saber más de mi o te interesaría que forme parte de tu equipo de trabajo no dudes en contactarme, ya sea llenando el formulario o por los siguientes medios",
+    "contacto.descripcion": "¿Tenés alguna duda? ¿Querés saber más de mí? ¿Te interesaría que forme parte de tu equipo de trabajo? ¡No dudes en escribirme!",
     "form.nombre": "Nombre y apellido",
     "form.correo": "Correo",
     "form.asunto": "Asunto",
@@ -218,7 +218,7 @@ const traducciones = {
 
     // SOBRE MI
     "sobre-mi.titulo": "About me",
-    "sobre-mi.descripcion": "I am a student of Computer Engineering with a great interest in Full Stack development. I enjoy both frontend and backend work. I seek to apply my knowledge and skills to build effective, well-structured, and maintainable solutions. I highly value collaborative work, clean code, and continuous improvement. I am excited to participate in projects where I can contribute ideas and continue to grow as a developer.",
+    "sobre-mi.descripcion": "I am a Computer Engineering student with an interest in Full Stack web development. I enjoy getting involved in both frontend and backend, and I like building organized, functional, and sustainable solutions. I have been working on different projects that allowed me to put what I have learned into practice, continue improving, and reinforce my desire to grow in this field.\nI value teamwork, writing clean code, and learning from every experience. My goal is to keep adding new skills and contribute value to future challenges.",
 
     // TECNOLOGIAS
     "tecnologias.titulo": "Technologies and Databases",
@@ -230,15 +230,15 @@ const traducciones = {
     "proyectos.titulo": "Projects",
     "proyectos.dietetic.titulo": "Dietetic-Shop",
     "proyectos.dietetic.subtitulo": "Banco Nación Foundation | Pescar Foundation",
-    "proyectos.dietetic.descripcion": "Academic integrative project based on an e-commerce platform aimed at physical stores to expand their reach and sell digitally, without the need for advanced technical knowledge.",
+    "proyectos.dietetic.descripcion": "Collaborative academic integrative project based on an e-commerce platform aimed at physical stores to expand their reach and sell digitally.",
     "proyectos.pokeapi.titulo": "PokeAPI",
     "proyectos.pokeapi.subtitulo": "University of Buenos Aires",
-    "proyectos.pokeapi.descripcion": "REST API to query and manage Pokémon data, including abilities, moves, and team building. Modular design and data consumption from CSV files, with information stored in a SQLite database.",
+    "proyectos.pokeapi.descripcion": "Team Full Stack project. Development of a REST API to query Pokémon data from CSV files, later migrated to SQLite. Currently adding a frontend in Svelte.",
     "proyectos.portfolio.titulo": "Web Portfolio",
     "proyectos.portfolio.descripcion": "Interactive portfolio showcasing my skills and projects in a responsive design.",
     "proyectos.laburatorio.titulo": "Interview Express Simulator",
     "proyectos.laburatorio.subtitulo": "Pescar Foundation",
-    "proyectos.laburatorio.descripcion": "Interactive interview simulator project developed for a tech event called Laburatorio.",
+    "proyectos.laburatorio.descripcion": "Team project: job interview simulator developed for a technology event called Laburatorio.",
 
     // EDUCACION
     "educacion.titulo": "Education",
@@ -264,7 +264,7 @@ const traducciones = {
 
     // FORMULARIO
     "contacto.titulo": "Contact me",
-    "contacto.descripcion": "If you have any questions, want to know more about me, or are interested in having me join your team, don't hesitate to get in touch — either by filling out the form or through the following channels",
+    "contacto.descripcion": "Do you have any questions? Want to know more about me? Interested in having me on your team? Don’t hesitate to reach out!",
     "form.nombre": "Full name",
     "form.correo": "Email",
     "form.asunto": "Subject",
