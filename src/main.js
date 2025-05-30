@@ -167,7 +167,7 @@ const traducciones = {
     "educacion.1.fecha": "Junio 2023 - en curso",
     "educacion.2.titulo": "Desarrollador Web Full Stack",
     "educacion.2.institucion": "EducaciónIT | Fundación Banco Nación | Fundación Pescar",
-    "educacion.2.fecha": "2025 - en curso",
+    "educacion.2.fecha": "Febrero 2025 - en curso",
     "educacion.3.titulo": "Técnico en Informática Profesional",
 
     // CERTIFICADOS
@@ -247,7 +247,7 @@ const traducciones = {
     "educacion.1.fecha": "June 2023 - ongoing",
     "educacion.2.titulo": "Full Stack Web Developer",
     "educacion.2.institucion": "EducaciónIT | Banco Nación Foundation | Pescar Foundation",
-    "educacion.2.fecha": "2025 - ongoing",
+    "educacion.2.fecha": "February 2025 - ongoing",
     "educacion.3.titulo": "Professional IT Technician",
 
     // CERTIFICADOS
