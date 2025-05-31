@@ -7,11 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
     btnsCopiar.forEach(btn => {
         btn.addEventListener('click', () => {
             const parentElement = btn.parentElement;
-            const textoCopiar = parentElement.querySelector('span');
+            const textoCopiar = "dyylancelentano@gmail.com"
             const mensajeCopiado = parentElement.querySelector('.copiado');
 
             if (textoCopiar && mensajeCopiado) {
-                navigator.clipboard.writeText(textoCopiar.textContent.trim())
+                navigator.clipboard.writeText(textoCopiar.trim())
                     .then(() => {
                         mensajeCopiado.classList.remove('hidden');
                         setTimeout(() => {

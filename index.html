@@ -212,25 +212,22 @@
                                         <span class="efecto-boton"></span>
 
                                     </button>
-                                </div>
 
-                                <!-- Email y botón copiar -->
-                                <div class="text-center flex flex-col sm:flex-row items-center gap-4">
-
-                                    <span class="justify-center bg-[#2B2B2B] w-full sm:w-[270px] h-[40px] text-gray-300 font-medium text-center py-2 rounded-3xl text-sm">
-                                        dyylancelentano@gmail.com
-                                    </span>
-                                    
-                                    <button class="Btn btn-copiar w-[40px] h-[45px]">
-
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="svgIcon" height="1.5em" viewBox="0 0 24 24"><path fill="currentColor" d="M15.24 2h-3.894c-1.764 0-3.162 0-4.255.148c-1.126.152-2.037.472-2.755 1.193c-.719.721-1.038 1.636-1.189 2.766C3 7.205 3 8.608 3 10.379v5.838c0 1.508.92 2.8 2.227 3.342c-.067-.91-.067-2.185-.067-3.247v-5.01c0-1.281 0-2.386.118-3.27c.127-.948.413-1.856 1.147-2.593s1.639-1.024 2.583-1.152c.88-.118 1.98-.118 3.257-.118h3.07c1.276 0 2.374 0 3.255.118A3.6 3.6 0 0 0 15.24 2"/><path fill="currentColor" d="M6.6 11.397c0-2.726 0-4.089.844-4.936c.843-.847 2.2-.847 4.916-.847h2.88c2.715 0 4.073 0 4.917.847S21 8.671 21 11.397v4.82c0 2.726 0 4.089-.843 4.936c-.844.847-2.202.847-4.917.847h-2.88c-2.715 0-4.073 0-4.916-.847c-.844-.847-.844-2.21-.844-4.936z"/></svg>
-
+                                    <!-- Email y botón copiar -->
+                                    <button class="Btn btn-copiar w-auto h-12 sm:w-[120px] sm:h-[45px] px-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="svgIcon" height="1.5em" viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M15.24 2h-3.894c-1.764 0-3.162 0-4.255.148c-1.126.152-2.037.472-2.755 1.193c-.719.721-1.038 1.636-1.189 2.766C3 7.205 3 8.608 3 10.379v5.838c0 1.508.92 2.8 2.227 3.342c-.067-.91-.067-2.185-.067-3.247v-5.01c0-1.281 0-2.386.118-3.27c.127-.948.413-1.856 1.147-2.593s1.639-1.024 2.583-1.152c.88-.118 1.98-.118 3.257-.118h3.07c1.276 0 2.374 0 3.255.118A3.6 3.6 0 0 0 15.24 2"/>
+                                            <path fill="currentColor" d="M6.6 11.397c0-2.726 0-4.089.844-4.936c.843-.847 2.2-.847 4.916-.847h2.88c2.715 0 4.073 0 4.917.847S21 8.671 21 11.397v4.82c0 2.726 0 4.089-.843 4.936c-.844.847-2.202.847-4.917.847h-2.88c-2.715 0-4.073 0-4.916-.847c-.844-.847-.844-2.21-.844-4.936z"/>
+                                        </svg>
+                                        <span class="texto-boton text-sm" data-i18n="copy.correo">Copiar Correo</span>
                                         <span class="efecto-boton"></span>
                                     </button>
+                                    
+                                    <span data-i18n="msg.copy" class="copiado ml-2 text-sm text-black bg-gray-300 w-24 h-7 text-center rounded-3xl hidden">¡Copiado!</span>
 
-                                    <span data-i18n="msg.copy" class="copiado ml-2 text-sm text-black bg-gray-300 w-24 text-center rounded-3xl hidden">¡Copiado!</span>
 
                                 </div>
+
 
                             </div> <!-- COLUMNA IZQUIERDA: Título y botones -->
 
@@ -281,7 +278,7 @@
               <!-- --------------------------------------------------------- -->
               <!-- TECNOLOGIAS -->
               <section id="tecnologias" class="py-8 sm:py-12 lg:py-16">
-                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight tracking-[-0.015em] mb-6 sm:mb-8">
+                <h2 data-i18n="tecnologias.titulo" class="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight tracking-[-0.015em] mb-6 sm:mb-8">
                     Tecnologías y Base de Datos
                 </h2>
 
@@ -894,7 +891,7 @@
                                 <svg class="w-6 h-6 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                                 </svg>
-                                <span>dyylancelentano@gmail.com</span>
+                                <span data-i18n="copy.correo">Copiar Correo</span>
 
 
                                 <button class="btn-copiar w-5 h-5">
