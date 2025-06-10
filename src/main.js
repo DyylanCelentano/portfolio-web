@@ -135,6 +135,7 @@ const traducciones = {
     "calidad": "Calidad",
     "compromiso": "Compromiso",
     "pasion": "Pasión",
+    "copy.correo": "Copiar Correo",
 
     // SOBRE MI
     "sobre-mi.titulo": "Sobre mí",
@@ -213,6 +214,7 @@ const traducciones = {
     "calidad": "Quality",
     "compromiso": "Commitment",
     "pasion": "Passion",
+    "copy.correo": "Copy Email",
 
     // SOBRE MI
     "sobre-mi.titulo": "About me",
