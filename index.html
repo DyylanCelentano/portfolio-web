@@ -51,8 +51,8 @@
                 <!-- Botones navbar -->
                 <div class="flex items-center gap-2 sm:gap-4">
 
-                    <!-- Modo oscuro / claro -->
-                    <label class="contenedor-boton">
+                    <!-- Modo oscuro/claro -->
+                     <label class="contenedor-boton">
                         <input id="checkbox" type="checkbox" />
                         <span class="slider">
                             <div class="star star_1"></div>
@@ -63,6 +63,7 @@
                             </svg>
                         </span>
                     </label> <!-- Modo oscuro / claro -->
+
 
                     <!-- Idioma -->
                     <div class="relative py-1">
@@ -551,7 +552,7 @@
 
                     <!-- Proyecto 2 -->
                     <div class="flex flex-col gap-3 sm:gap-4 p-3 sm:p-4 lg:p-6 bg-[var(--bg-secundario)] rounded-xl">
-                        <div class="w-full aspect-video rounded-lg bg-cover bg-center bg-no-repeat" style='background-image: url("img/proyectos/pokemon.webp");'></div>
+                        <div class="w-full aspect-video rounded-lg bg-cover bg-center bg-no-repeat" style='background-image: url("img/proyectos/pokeapi.webp");'></div>
 
                         <div class="flex flex-col gap-2 sm:gap-3">
                             <h3 data-i18n="proyectos.pokeapi.titulo" class="text-lg sm:text-xl font-bold">PokeAPI</h3>
@@ -570,8 +571,17 @@
                                 Proyecto Full Stack en equipo. Desarrollo de una API REST para consultar datos de Pokémon a partir de archivos CSV, luego migrados a SQLite. Actualmente incorporando frontend en Svelte.
                             </p>
 
-                            <div class="mt-auto">
-                                <boton-codigo href="https://github.com/intro-tb022/tp2-parte-2-loscuatrofantasticos-jpg"></boton-codigo>
+                            <div class="flex flex-row sm:flex-row gap-2 mt-auto">
+                                <a href="https://introdex.netlify.app/" target="_blank" data-i18n="btn.ver.pagina" class="bg-[#52800c] text-white font-semibold px-3 sm:px-4 py-2 rounded-lg hover:bg-[#406509] transition-colors text-xs sm:text-sm">
+                                    Ver página
+                                </a>
+
+                                <a href="https://github.com/DyylanCelentano/frontend-pokeapi.git" target="_blank" data-i18n="btn.code.front" class="bg-[#0e59ba] text-white font-semibold px-3 sm:px-4 py-2 rounded-lg hover:bg-[#0b438c] transition-colors text-xs sm:text-sm">
+                                    Frontend
+                                </a>
+
+                                <!-- btn backend -->
+                                <a href="https://github.com/DyylanCelentano/backend-pokeapi.git" target="_blank" data-i18n="btn.code.back" class="bg-[#bf8509] text-white font-semibold px-3 sm:px-4 py-2 rounded-lg hover:bg-[#a97607] transition-colors text-xs sm:text-sm">Backend</a>
                             </div>
                         </div>
                     </div>
